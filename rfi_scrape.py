@@ -6,8 +6,8 @@ def scrape_and_save_rainfall_data():
     base_url = 'http://121.58.193.173:8080/rainfall/map_list.do?ymdhm='
     obsnm_list = ["Nangka", "Mt. Oro", "San Mateo-2", "Marikina (Youth Camp)"]
     
-    start_date = datetime(2023, 1, 1)
-    end_date = datetime(2023, 10, 12)
+    start_date = datetime(2012, 1, 1)
+    end_date = datetime(2023, 11, 12)
     current_date = start_date
 
     with open('rainfall_data.csv', 'w', newline='') as csvfile:
